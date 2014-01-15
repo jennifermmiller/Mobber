@@ -1,0 +1,215 @@
+body {
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+  font-family: Nunita; 
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header{
+  background: url('backgroundimage.png') repeat;
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+}
+
+.header li {
+  left: 75px;
+  display: inline-block;
+  padding: 0px 20px 20px;
+}
+
+.logo img{
+  position: relative;
+  top:12px;
+}
+
+.last{
+  position: absolute;
+  right: 25px;
+  display: inline-block; 
+}
+
+.headShot img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; 
+  position: relative;
+  right: 85px;
+  top: -13px;
+}
+.banner{
+  text-align: center;
+  height: 100px;
+  margin: 0;  
+  padding: 10px 0 0;
+  font-size: 15px;
+}
+
+.container{
+  position: relative;
+  left: 0; 
+  height: 750px;
+  width: 960px;
+  background: rgb(238,236,232);
+  display: inline-block;
+}
+
+.mobParty {
+  left: 50px;
+  top: 40px;
+  position: absolute;
+  height: 550px;
+  width: 500px;
+  background: rgb(197,195,185);
+}
+
+.picHeader{
+  left: 0;
+  top: 0;
+  height: 60px;
+  background-color: rgba(0,0,0,.8);
+  color: #fff;
+}
+
+.picHeader ul{
+  list-style: none;
+  margin:0; 
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.picHeader ul li{
+  display: inline;
+}
+
+.picHeader ul li:nth-child(2){
+  float: right;
+  padding-right: 15px;
+}
+
+.mobParty img{
+  width: 500px;
+  height: 400px;
+  z-index: 25;
+}
+
+.message{   
+  display: inline-block;
+  background: rgb(255,194,2);
+  color: white;
+  height: 45px;
+  width: 140px;
+  font-size: 11px;
+  margin-top: -22px;
+  margin-left: -5px;
+  text-align: center
+}
+
+.imgFooter{
+  padding-left: 25px;
+  margin-top: -10px;
+  color: rgb(42,42,42);
+  font-style: italic;
+}
+
+.mobParty p{
+  color: darkgrey;
+  font-size: 12px;  
+  width: 450px;
+  padding-left: 25px;
+}
+
+.sideLeft{
+  position: absolute;
+  right: 100px;
+  top: 40px;
+}
+
+.status{
+  width: 130px;
+  background: rgb(198, 194, 187);
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.status .numb{
+  font-size: 75px;
+  padding: 20px 0;
+}
+
+.status .unit{
+  background: rgb(167,158,146);
+  height: 25px;
+  padding: 5px 0;
+  color: rgb(50,50,50); 
+}
+
+.button{  
+  width: 280px;
+  height: 70px;
+  color: white;
+  background: rgb(255,194,2);
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+  margin-top: 30px;
+  border: 1px solid rgb(199,124,0);
+  border-radius: 5%;
+}
+
+.reward{
+  background: white;
+  border: 1px solid rgb(166,166,165);
+  width: 260px;
+  height: 85px;
+  text-align: left;
+  margin: 0;
+}
+
+.reward img{
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.reward h1{
+  margin: 0;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.reward h3{
+  margin:0; 
+  padding-left: 30px;
+}
+
+.advert{
+  display: inline-block;
+}
+
+.advert img{
+  width: 300px;
+  margin-top: 20px
+}
+
+.advert h3{
+  font-size: 12px;
+  margin-top: 5px;  
+  margin-bottom: 4px;
+}
+
+.advert p{
+  display: inline-block;
+  font-size: 10px;
+  color: gray;
+}

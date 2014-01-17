@@ -106,6 +106,7 @@ body *{
 .picheader-left{
 margin-left: 15px;
 font-size: 20px;
+font-weight: bold;
 line-height: 55px;
 }
 
@@ -195,7 +196,7 @@ line-height: 55px;
   height: 300px;
 } 
 
-.button{  
+.button-join{  
   width: 280px;
   height: 60px;
   line-height: 60px;
@@ -206,6 +207,9 @@ line-height: 55px;
   text-shadow: 0 1px 1px rgb(162,84,0);
   border: 1px solid rgb(199,124,0);
   border-radius: 8px;
+  /*How can I layer box shadow over .reward?*/
+  box-shadow: inset 0px 1px 1px white, 
+                    0px 3px 2px rgb(203,213,232);
   background: rgb(255,245,178);
     background: -moz-linear-gradient(top, rgb(255,245,178) 0%, rgb(255,212,7) 1%, rgb(238,148,0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,245,178)), color-stop(1%,rgb(255,212,7)), color-stop(100%,rgb(238,148,0)));
@@ -228,15 +232,16 @@ line-height: 55px;
 }
 
 .reward span{
+  color: rgb(50,50,50);
   line-height: 50px;
   font-size: 18px;
-  text-shadow: 0 1px 1px rgb(110,110,110);
+  font-weight: bold;
   display: inline-block;
 }
 
 .reward span:nth-child(3){
 font-size: 12px;
-text-shadow: 0 0 1px rgb(162,162,162);
+font-weight: none;
 padding-left: 49px;
 margin-top: -42px;
 }
@@ -275,7 +280,7 @@ margin-top: -42px;
   padding-top: 35px;
   background: white;
   border-bottom: 1px solid rgb(162,162,162);
-  height: 275px;
+  height: 285px;
 }
 
 .jcrew, .ruth, .twisted-sister{
@@ -298,6 +303,10 @@ margin-top: -42px;
   text-align: left;  
 }
 
+.sub-left{
+  color: rgb(50,50,50);
+}
+
 .sub-left span{
   font-size: 11px;
   color: rgb(101,101,101);
@@ -314,32 +323,238 @@ margin-top: -42px;
 
 .sub-right time{  
   font-size: 12px;
+  color: rgb(119,119,119);
 }
 
-/*Start of Upcoming Mob*/
-.upcoming-mob h1{
+/*Start of Upcoming Mobs*/
+.upcoming-mobs{
+  margin: 15px 0 60px 0;
+  display: inline-block;
+}
+
+.upcoming-left{
+  display: inline-block;
+}
+
+.upcoming-left h2{
   color: rgb(50,50,50);
-  font-size: 25px;
 }
 
 .table{
-  padding-top: 25px;  
+  margin-top: 24px;  
 }
 
 .table tr td{
-  padding-left: 15px;
-  border-spacing: 0.5rem;
-  border-bottom: 1px solid black;
+  width: 205px;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid rgb(162,162,162);
 }
 
+.host-location{
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(50,50,50);
+  text-align: left;
+}
 
+.mobbers-needed{
+  color: rgb(50,50,50); 
+  text-align: right;
+  font-size: 13px
+}
 
+.mob-date{
+  color: rgb(101,101,101);
+  text-align: right;
+  font-size: 13px;
+}
 
+.start-mob{
+  display: inline-block;
+  margin: 6px 0 0 20px;
+  background: rgb(197,194,187);
+  width: 300px;
+  height: 210px;
+}
 
+.start-mob h2{
+  color: rgb(255,255,255);
+  text-align: center;
+  margin-top: 15px;
+  text-shadow: 0 1px 1px rgb(126,124,121);
+}
 
+.get-started{
+  display: inline-block;
+  margin: 10px 0 0 28px;
+}
 
+.circle-1, .circle-2, .circle-3{
+  display: inline-block;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(95,95,95);
+  border: 1px solid rgb(138,135,132);
+  box-shadow: inset 1px 2px 1px white, 
+              1px 1px 2px rgb(165,161,156);
+  background: rgb(202,202,202);
+    background: -moz-linear-gradient(top,  rgb(202,202,202) 0%, rgb(251,251,251) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(202,202,202)), color-stop(100%,rgb(251,251,251)));
+    background: -webkit-linear-gradient(top,  rgb(202,202,202) 0%,rgb(251,251,251) 100%);
+    background: -o-linear-gradient(top,  rgb(202,202,202) 0%,rgb(251,251,251) 100%);
+    background: -ms-linear-gradient(top,  rgb(202,202,202) 0%,rgb(251,251,251) 100%);
+    background: linear-gradient(to bottom,  rgb(202,202,202) 0%,rgb(251,251,251) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#fbfbfb',GradientType=0 );
+}
 
+.connection{
+  display: inline-block;
+  width: 65px;
+  height: 7px;
+  margin: 16px -4px 0 -3px;
+  background: rgb(175,173,166);
+}
 
+.instructions{
+  display: inline-block;
+  margin: 5px 0 10px 0;
+  font-size: 12px;
+  color: rgb(50,50,50);
+  text-align: center;
+}
 
+.upload-image, .write-message, .upload-reward{
+  display: inline-block;
+  width: 98px;
+}
 
+.button-start{
+  width: 275px;
+  height: 60px;
+  margin-left: 10px;
+  line-height: 58px;
+  text-shadow: 0px 1px 1px white;
+  border-radius: 5px;
+  color: rgb(0,122,167);
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid rgb(125,123,120);
+  box-shadow: inset 0 1px 1px white, 
+              inset 1px -1px 0 rgb(175,171,164);
+  background: rgb(225,224,220);
+    background: -moz-linear-gradient(top,  rgb(225,224,220) 0%, rgb(198,194,187) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,224,220)), color-stop(100%,rgb(198,194,187)));
+    background: -webkit-linear-gradient(top,  rgb(225,224,220) 0%,rgb(198,194,187) 100%);
+    background: -o-linear-gradient(top,  rgb(225,224,220) 0%,rgb(198,194,187) 100%);
+    background: -ms-linear-gradient(top,  rgb(225,224,220) 0%,rgb(198,194,187) 100%);
+    background: linear-gradient(to bottom,  rgb(225,224,220) 0%,rgb(198,194,187) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e0dc', endColorstr='#c6c2bb',GradientType=0 );
 
+}
+
+.bottom{
+  background: rgb(66,65,65);
+}
+
+.categories{
+  display: inline-block;
+  margin-top: 23px;
+}
+
+.column-left, .column-right{
+  display: inline-block;
+  width: 150px;
+}
+
+.categories h3{
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 1px rgb(37,36,36);
+  margin-bottom: 5px;
+}
+
+.column-right{
+  margin-left: 10px;
+}
+
+.button-category{
+  width: 140px;
+  height: 40px;
+  margin-top: 10px;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  background: rgb(80,80,79);
+  font-size: 14px;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgb(60,60,59);
+  border: 1px solid rgb(43,43,43);
+  box-shadow: inset 0 1px 2px rgb(118,118,117),
+                    0 1px 0 rgb(68,67,66);
+}
+
+.connect{
+  width: 225px;
+  display: inline-block;
+  color: white;
+  margin-top: 23px;
+  margin-left: 90px;
+}
+
+.connect h3{
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 1px rgb(37,36,36);
+}
+
+.connect p{
+  font-size: 12px;
+  color: rgb(189,189,189);
+  text-shadow: 0 1px 1px rgb(107,107,108);
+}
+
+.email{
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.email-input, .email-go{
+  display: inline;
+  height: 42px;
+}
+
+.email-input{
+  width: 162px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.social-media{
+  margin-top: 23px;
+  font-size: 14px;
+  color: rgb(200,200,200);
+  text-shadow: 0 1px 1px rgb(31,30,30);
+}
+
+.facebook, .twitter{
+  padding-bottom: 3px;
+  border-bottom: 1px solid  rgb( 42,42,42);
+
+}
+
+/*.email-go{
+  background-color: rgb(139,139,139);
+  float: right;
+  background-image: url('images/checkmark.png') norepeat center center;
+}*/
+
+.footer{
+  display: inline-block;
+  width: 200px;
+}

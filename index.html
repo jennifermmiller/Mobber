@@ -7,107 +7,151 @@
 </head>
 
 <body>
-  <div class="header"> 
+  <div class="header"> <!--Start of Header-->
     <div class="wrapper"> 
 		  <img class="logo" src="images/mobberlogo.png">
     	<ul class="nav">	
         <li>find a mob</li> 
     		<li>start a mob</li> 
       </ul>   
-
       <div class="user-menu">
-        <img class="headShot" src="images/lake.jpg"> 
+        <img class="user-photo" src="images/lake.jpg"> 
         <span class="user-name">Jen Miller</span>
         <img class="user-menu" src='images/usermenu.png'>
       </div>
 	  </div>  
   </div> 
   <div class="banner">
-    <div class="wrapper">
-      <h1>Spread the word and be rewarded for spreading the word for others.</h1>
-    </div>
-  </div>
-  
-  <div class="middle-section"> 
     <div class="container">
+      <h1>Spread the word and be rewarded for spreading the word for others.</h1>
+    </div> <!-- End of Header!-->
+  </div>
 
+  <div class="middle-section"> <!--Start of Main Event div-->
+    <div class="container">
       <div class="event">
-        <!-- <div class="picHeader">  
-          <ul>
-            <li>U2 World Tour</li>
-            <li>This mob ends in 3:18:04</li>
-          </ul>
-        </div>-->
-        
-        <img class="mob-scene" src="images/u2.jpeg">
-        
+        <div class="picture-header">  
+          <span class="picheader-left">U2 World Tour</span>
+          <div class="picheader-right">
+            <img src="images/clockdark.png">
+            <span>This mob ends in</span> 
+            <time class="title-right">3:18:04</time>
+          </div>
+        </div>
+        <img class="picture-main" src="images/u2-tour.png">
         <!-- Use a ribbon editor to make this
-        <div class="message">
+          <div class="message">
           <h2>MOB MESSAGE</h2>
-        </div>
-        -->
-        <div class="image-footer">
+          </div>-->
+        <div class="picture-footer">
           <h3>"U2's 360 tour starts April 16, 20120. Get your tickets at Ticketmaster http://cl.ly/0d2p2f"</h3>
-    
-          <p>Joining this mob means you agree to allow Mobber to send this message on your account once the number of mobbers is reached.</p>
         </div>
+        <div class="disclaimer">Joining this mob means you agree to allow Mobber to send this message on your account once the number of mobbers is reached.</div>
       </div>
-
       <div class="side-bar">
         <div class="stats">
             <div class="number">78</div>
             <div class="unit">Mobbers</div>
         </div>
-
         <div class="stats">
             <div class="number">250</div>
             <div class="unit">Mobbers needed</div>
         </div>
-        
         <div class="join">
           <div class="button">Join this Mob!</div>
-
           <div class="reward"> 
-            <img src="images/reward.png">
+            <img src="images/ribbon.png">
             <span>Your Reward</span>  
             <span>Ticket Presale Entrance</span> 
           </div>
+          <div class="reward-footer">
+            <span>This Mob will only be release if it is joined by the needed amount of mobbers. Spread the word!</span>
+            <img src="images/sharebuttons.png">  
+          </div> 
         </div>  
       </div>
     </div>
-  </div> <!-- end of middle-section div -->
-
+  </div> <!-- End of Main Event div -->
     
-  
-
-    <!-- <div class="advertising"> 
+  <div class="container"> <!--Start of Upcoming Events div-->
+    <div class="upcoming-events"> 
       <div class="jcrew">
-        <img src="jcrew.png">
-        <div class="subHead">
-          <h3>J.Crew Men's Watches</h3>
-          <p>52 Mobbers, 100 Mobbers Needed</p>
-        </div>
+        <img src="images/jcrew.png">
+        <div class="sub-image">
+          <div class="sub-left">
+            <h5>J.Crew Men's Watches</h5>
+            <span>52 Mobbers, 100 Mobbers Needed</span>
+          </div>
+          <div class="sub-right">
+            <img src="images/clock.png">
+            <time>3:12:43</time>
+          </div>
+        </div> 
       </div>
-
       <div class="ruth">
-        <img src="ruth.png">
-        <div class="subHead">
-          <h3>Free Appetizer at Ruth's Steak House</h3>
-          <p>52 Mobbers, 100 Mobbers Needed</p>
+        <img src="images/ruth.png">
+        <div class="sub-image">
+          <div class="sub-left">
+            <h5>Free Appetizer at<br> Ruth's Steak House</h5>
+            <span>52 Mobbers, 100 Mobbers Needed</span>
+          </div>
+          <div class="sub-right">
+            <img src="images/clock.png">
+            <time>3:12:43</time>
+          </div>
         </div>
       </div>
-
-      <div class="twisted">
-        <img src="twistsis.png">
-        <div class="subHead">
-          <h3>Presale for Twisted Sister Reunion Tour</h3>
-          <p>52 Mobbers, 100 Mobbers Needed</p>
+      <div class="twisted-sister">
+        <img src="images/twistedsister.png">
+        <div class="sub-image"> 
+          <div class="sub-left">
+            <h5>Presale for Twisted Sister<br> Reunion Tour</h5>
+            <span>52 Mobbers, 100 Mobbers Needed</span>
+          </div>
+          <div class="sub-right">
+            <img src="images/clock.png">
+            <time>3:12:43</time>
+          </div>
         </div>
       </div>
     </div>
+  </div> <!--End of Upcoming Events div-->
 
+  <div class="container"> <!--Start of Upcoming Mobs-->
+    <div class="upcoming-mob">
+      <h2>Upcoming Mobs</h2>
+      <div class="table">
+        <table rules="rows">
+          <tbody>
+            <tr>
+              <td class="host-location">Muse's New Album Release</td>
+              <td class="mobbers-needed">100 Mobbers Needed</td>
+              <td class="mob-date">Thursday, April 4, 2012</td>
+            </tr> 
+            <tr>
+              <td class="host-location">P.F. Chang's Restaurant</td>
+              <td class="mobbers-needed">100 Mobbers Needed</td>
+              <td class="mob-date">Thursday, April 4, 2012</td>
+            </tr>
+            <tr>
+              <td class="host-location">J.Crew Men's Watch Sale</td>
+              <td class="mobbers-needed">100 Mobbers Needed</td>
+              <td class="mob-date">Thursday, April 4, 2012</td>
+            </tr>
+            <tr>
+              <td class="host-location">J.Crew Men's Watch Sale</td>
+              <td class="host-location">100 Mobbers Needed</td>
+              <td class="mob-date">Thursday, April 4, 2012</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="start-mob">
+
+      </div>
+    </div>
+  </div>
 </body>
-</html>-->
+</html>
 
-<!--
-  table at bottom - can use table generator-->
+<!--table at bottom - can use table generator-->

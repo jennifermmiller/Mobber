@@ -1,4 +1,4 @@
-/*Basic body elements*/
+/*Basic Body Elements... altern. font: Futura, Helvetica, Arial, sans-serif;*/
 body *{
   vertical-align: top;
 	margin: 0;
@@ -6,12 +6,8 @@ body *{
   font-family: 'Didact Gothic', sans-serif;
 }
 
-h1{
-  margin:0;
-}
-
 /*Utilities*/
-.wrapper {
+.container{
   margin: 0 auto;
   width: 960px;
 }
@@ -24,14 +20,14 @@ h1{
   height: 60px;
 }
 
-.header .logo {    
+.header .logo{    
   display: inline-block;
   margin-top: 12px;
 }
 
-.header .nav { 
+.header .nav{ 
   display: inline-block;
-  margin: 17px 0 0 38px; 
+  margin: 17px 0 0 30px; 
   padding: 0; 
 } 
 
@@ -39,7 +35,7 @@ h1{
   list-style: none; 
   display: inline;
   text-shadow: 0 1px 1px #000;
-  margin-right: 40px;
+  margin-right: 35px;
   text-transform: uppercase; 
   font-size: 17px;
 }
@@ -50,7 +46,7 @@ h1{
   padding-top: 10px;
 }
 
-.header .user-menu .headShot{
+.header .user-menu .user-photo{
   height: 50px;
   width: 50px;
   border-radius: 50%; 
@@ -60,6 +56,7 @@ h1{
 .header .user-menu .user-name{  
   display: inline-block;
   margin-top: 10px;
+  font-size: 15px;
 }
 
 .header .user-menu .user-menu{
@@ -83,28 +80,48 @@ h1{
   box-shadow: 0 0 6px rgb(162,162,162);
 }
 
-.container {
-  margin: 0 auto;
-  width: 960px;
-}
-
+/*Middle of Page*/
 .middle-section {
-  background: rgb(239,236,231);
+  background: rgb(238,236,232);
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(208,208,208);
+  box-shadow: inset 0px -10px 3px -10px rgb(208,208,208);
 }
 
-.event {
+.event{
   width: 620px;
   display: inline-block;
+  position: relative;
 }
 
-.side-bar {
-  width: 300px; 
-  display: inline-block;
-  margin-left: 20px;  
+.picture-header{
+  width: 620px;
+  height: 50px;
+  position: absolute;
+  color: white;
+  background: rgba(0,0,0,0.3);
   margin-top: 25px;
 }
 
-.mob-scene {
+.picheader-left{
+margin-left: 15px;
+font-size: 20px;
+line-height: 55px;
+}
+
+.picheader-right{
+  float: right;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.picheader-right img{
+  padding-top: 13px;
+  padding-right: 3px;
+}
+
+.picture-main{
   width: 620px;
   height: 400px;
   margin-top: 25px;
@@ -122,19 +139,30 @@ h1{
   text-align: center
 }*/
 
-.image-footer{
-  padding-left: 25px;
-  margin-top: -10px;
-  color: rgb(42,42,42);
+.picture-footer{
+  padding: 25px 0 0 25px;
+  color: rgb(50,50,50);
   font-style: italic;
-  width: 620px;
+  font-size: 15px;
+  background: rgb(197,194,187);
+  border-bottom: rgb(228,225,219);
+  width: 595px;
+  height: 60px;
 }
 
-.image-footer p{
-  color: darkgrey;
+.disclaimer{
+  color: rgb(101,101,101);
   font-size: 12px;  
   width: 450px;
   padding-left: 25px;
+  margin-top: 8px;
+}
+
+.side-bar{
+  width: 300px; 
+  display: inline-block;
+  margin-left: 20px;  
+  margin-top: 25px;
 }
 
 .stats{
@@ -174,32 +202,33 @@ h1{
   color: white;
   text-align: center;
   font-size: 25px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-shadow: 0 1px 1px rgb(162,84,0);
   border: 1px solid rgb(199,124,0);
   border-radius: 8px;
-  background: rgb(255,205,7);
-    background: -moz-linear-gradient(top, rgb(255,205,7) 0%, rgb(238,148,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,205,7)), color-stop(100%,rgb(238,148,0)));
-    background: -webkit-linear-gradient(top, rgb(255,205,7) 0%,rgb(238,148,0) 100%);
-    background: -o-linear-gradient(top, rgb(255,205,7) 0%,rgb(238,148,0) 100%);
-    background: -ms-linear-gradient(top, rgb(255,205,7) 0%,rgb(238,148,0) 100%);
-    background: linear-gradient(to bottom, rgb(255,205,7) 0%,rgb(238,148,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcd07', endColorstr='#ee9400',GradientType=0 );
+  background: rgb(255,245,178);
+    background: -moz-linear-gradient(top, rgb(255,245,178) 0%, rgb(255,212,7) 1%, rgb(238,148,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,245,178)), color-stop(1%,rgb(255,212,7)), color-stop(100%,rgb(238,148,0)));
+    background: -webkit-linear-gradient(top, rgb(255,245,178) 0%,rgb(255,212,7) 1%,rgb(238,148,0) 100%);
+    background: -o-linear-gradient(top, rgb(255,245,178) 0%,rgb(255,212,7) 1%,rgb(238,148,0) 100%);
+    background: -ms-linear-gradient(top, rgb(255,245,178) 0%,rgb(255,212,7) 1%,rgb(238,148,0) 100%);
+    background: linear-gradient(to bottom, rgb(255,245,178) 0%,rgb(255,212,7) 1%,rgb(238,148,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff5b2', endColorstr='#ee9400',GradientType=0 );
 }
 
 .reward{
   background: white;
   border: 1px solid rgb(166,166,165);
   width: 265px;
-  height: 85px;
+  height: 70px;
   margin-left: 8px;
   display: inline-block;
   border-radius: 0 0 8px 8px;
+  box-shadow: inset 0px -10px 5px -10px rgb(162,162,162);
 }
 
 .reward span{
-  line-height: 59px;
+  line-height: 50px;
   font-size: 18px;
   text-shadow: 0 1px 1px rgb(110,110,110);
   display: inline-block;
@@ -208,50 +237,100 @@ h1{
 .reward span:nth-child(3){
 font-size: 12px;
 text-shadow: 0 0 1px rgb(162,162,162);
-padding-left: 65px;
-margin-top: -45px;
+padding-left: 49px;
+margin-top: -42px;
 }
 
 .reward img{
-  width: 50px;
   height: 50px;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-left: 10px;
   display: inline;
 }
 
-/*
-.advertising{
-  display: inline-block;
-}
-
-.advert img{
-  width: 300px;
-  margin-top: 20px
-}
-
-.advert h3{
+.reward-footer{
+  height: 300px;
+  width: 250px;
+  margin-top: 15px;
+  margin-left: 16px;
+  text-align: center;
   font-size: 12px;
-  margin-top: 5px;  
-  margin-bottom: 4px;
+  color: rgb(173,172,170);
 }
 
-.advert p{
+.reward-footer span{
+  padding-bottom: 15px;  
+}
+
+.reward-footer img{
+  border-top: 1px solid rgb(162,162,162);
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: -23px;
+}
+
+/*Start of Upcoming Events*/
+.upcoming-events{
   display: inline-block;
-  font-size: 10px;
-  color: gray;
+  padding-top: 35px;
+  background: white;
+  border-bottom: 1px solid rgb(162,162,162);
+  height: 275px;
 }
-*/
 
+.jcrew, .ruth, .twisted-sister{
+  display: inline-block;
+}
 
+.jcrew{
+  padding-left: none;
+}
 
+.ruth, .twisted-sister{
+  padding-left: 15px;
+} 
 
+.sub-right, .sub-left{
+  display: inline-block;
+}
 
+.sub-left{
+  text-align: left;  
+}
 
+.sub-left span{
+  font-size: 11px;
+  color: rgb(101,101,101);
+  text-shadow: none;
+}
 
+.sub-right{
+  float: right;
+}
 
+.sub-right img{
+  padding-left: 15px;
+}
 
+.sub-right time{  
+  font-size: 12px;
+}
 
+/*Start of Upcoming Mob*/
+.upcoming-mob h1{
+  color: rgb(50,50,50);
+  font-size: 25px;
+}
+
+.table{
+  padding-top: 25px;  
+}
+
+.table tr td{
+  padding-left: 15px;
+  border-spacing: 0.5rem;
+  border-bottom: 1px solid black;
+}
 
 
 

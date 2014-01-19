@@ -14,7 +14,7 @@ body *{
 
 /*Header*/
 .header{
-  background: url('images/headerBackground.png') repeat-x top left;
+  background: url('Images/headerBackground.png') repeat-x top left;
   text-align: left;
   color: white;
   height: 60px;
